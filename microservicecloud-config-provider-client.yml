@@ -15,7 +15,7 @@ mybatis:
 spring:
   profiles: dev
   application:
-    name:   
+    name: microservicecloud-config-dept 
   datasource:
     type: com.zaxxer.hikari.HikariDataSource                # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
@@ -30,7 +30,7 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/      
+      defaultZone: http://127.0.0.1:7001/eureka/      
   instance:
     instance-id: microservicecloud-config-dept8001  #界面上显示的名称
     prefer-ip-address: true     #访问路径可以显示IP地址  
@@ -54,7 +54,7 @@ mybatis:
 spring:
   profiles: test
   application:
-    name:   
+    name: microservicecloud-config-dept   
   datasource:
     type: com.zaxxer.hikari.HikariDataSource                # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
@@ -69,7 +69,7 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/      
+      defaultZone: http://127.0.0.1:7001/eureka/      
   instance:
     instance-id: microservicecloud-config-dept8001  #界面上显示的名称
     prefer-ip-address: true     #访问路径可以显示IP地址  
